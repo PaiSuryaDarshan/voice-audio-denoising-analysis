@@ -1,0 +1,4 @@
+examples/input/*.mp4
+examples/input/*.wav
+examples/output/*.mp4
+examples/output/*.wav
