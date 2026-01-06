@@ -1,4 +1,4 @@
-# Video Audio Denoising (DSP Learning Project)
+# Video Audio Denoising (Digital Signal Processing Project)
 
 This repository documents a learning-focused digital signal processing (DSP) project centred on background noise suppression in the audio track of video recordings.
 
