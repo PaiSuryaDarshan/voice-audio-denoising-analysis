@@ -1,15 +1,15 @@
 # Video Audio Denoising (Digital Signal Processing Project)
 
 <p align="center">
-  <img src="IMAGES/0_SNR_FACE.png" alt="Waveform overlay (Input vs Manual DSP vs Standard)" width="800">
+  <img src="Images/0_SNR_FACE.png" alt="Waveform overlay (Input vs Manual DSP vs Standard)" width="1000">
 </p>
 
 This repository documents a learning-focused digital signal processing (DSP) project centred on background noise suppression in the audio track of video recordings.
 
 The project implements and analyses two parallel denoising approaches:
 
-1.  a from-scratch DSP pipeline, explicitly implementing classical signal-processing components, and
-2.  a baseline pipeline using an existing noise-reduction library for comparison.
+1.  **A Manual approach** - a from-scratch DSP pipeline, explicitly implementing classical signal-processing components, and
+2.  **A Standard approach** - a baseline pipeline using an existing noise-reduction library for comparison.
 
 The primary goal is to understand the behaviour, trade-offs, and limitations of manual DSP design relative to higher-level abstractions, using transparent, signal-level evaluation rather than black-box or perceptual-only assessment.
 
