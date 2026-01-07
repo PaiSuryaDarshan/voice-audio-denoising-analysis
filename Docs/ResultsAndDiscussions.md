@@ -170,14 +170,14 @@ Visually:
 
 <div align="center">
 
-| Metric | Input | Manual DSP | Standard Denoising |
-|------|------:|-----------:|-------------------:|
-| Mean F₀ (Hz) | **148.63** | **177.56** | **159.62** |
-| Std(F₀) (Hz) | 39.19 | 58.34 | 56.84 |
-| IQR(F₀) (Hz) | **20.75** | **109.77** | **22.94** |
-| RMS(ΔF₀) (Hz) | 37.77 | **48.78** | **52.78** |
-| Median(|ΔF₀|) (Hz) | 1.41 | 1.35 | 1.41 |
-| Octave flip rate (%) | 7.41 | **9.88** | 9.13 |
+| Metric               |      Input | Manual DSP | Standard Denoising |
+| -------------------- | ---------: | ---------: | -----------------: | ---- | ---- |
+| Mean F₀ (Hz)         | **148.63** | **177.56** |         **159.62** |
+| Std(F₀) (Hz)         |      39.19 |      58.34 |              56.84 |
+| IQR(F₀) (Hz)         |  **20.75** | **109.77** |          **22.94** |
+| RMS(ΔF₀) (Hz)        |      37.77 |  **48.78** |          **52.78** |
+| Median(              |        ΔF₀ |     ) (Hz) |               1.41 | 1.35 | 1.41 |
+| Octave flip rate (%) |       7.41 |   **9.88** |               9.13 |
 
 </div>
 
@@ -205,4 +205,4 @@ see [conclusion.md](Conclusion.md)
 
 ## Note to reader who got this far,
 
-There is more analysis not covered in this document that can be found in the comparative signal analysis notebook linked [HERE](../notebooks/comparitive_signal_analysis.ipynb).
+There is more analysis not covered in this document that can be found in the comparative signal analysis notebook linked [HERE](../notebooks/statistical_comparison_and_signal_analysis.ipynb).
