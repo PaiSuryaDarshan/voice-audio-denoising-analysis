@@ -59,29 +59,36 @@ All observations are descriptive and exploratory.
 The repository is organised to reflect the learning and comparison-driven nature of the work.
 
 ```text
-video-audio-denoising/
-├── from_scratch/
-|   ├── DSP_Denoising_From_Scratch.pdf
-│   └── from_scratch_dsp_denoise.py
+voice-audio-denoising-analysis/
 │
-├── library_dsp/
-|   ├── Notes.md
-│   └── library_denoise.py
+├── vada/
+│   ├── from_scratch/
+│   │   └── (custom DSP denoising implementation)
+│   │
+│   └── library_dsp/
+│       └── standard_denoise.py
 │
-├── notebooks/
-|   ├── Results_and_discussion.md
-│   └── signal_analysis_comparison.ipynb
+├── Docs/
+│   ├── ResultsAndDiscussions.md
+│   ├── Conclusion.md
+│   └── DSP_Denoising_From_Scratch.pdf
 │
 ├── examples/
-│   ├── input/
-│   │   └── input.mp4
-│   └── output/
-│       ├── output_from_scratch_dsp_denoise.mp4
-│       └── output_standard_denoise.mp4
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── input/
+│   └── Link_to_original_input.txt        # DRIVE link(s)
+│
+├── output/
+│   └── Link_to_original_outputs.txt      # DRIVE link(s)
+│
+├── Images/
+│
+├── notebooks/
+│   └── statistical_comparison_and_signal_analysis.ipynb
+│
+├── .gitignore
+└── README.md
+
 ```
 
 • `from_scratch/` contains the from-scratch DSP implementation, kept as a single, linear script to preserve transparency of the full signal path.
