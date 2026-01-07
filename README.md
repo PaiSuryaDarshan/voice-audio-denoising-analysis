@@ -101,9 +101,35 @@ voice-audio-denoising-analysis/
 
 ## Benchmark verdict
 
-The standard library-based noise reduction approach is used as a reference baseline against which the from-scratch DSP implementation is evaluated. Comparative analysis focuses on signal-level behaviour and measurable characteristics rather than perceptual or production-oriented claims.
+(Note: All values relative to input)
 
-This benchmarking process is currently ongoing, and the results presented here should be considered preliminary.
+<div align="center">
+
+| Metric                             | Manual DSP | Standard Denoising |
+| ---------------------------------- | ---------: | -----------------: |
+| **Relative Loudness (dB)**         |   −8.23 dB |          −13.52 dB |
+| **Relative Loudness (%)**          |       −61% |               −79% |
+| **Relative Clarity Improvement**   |    ~35–40% |            ~55–60% |
+| **Relative Pitch Wobble (IQR F₀)** |  **+429%** |             +10.5% |
+
+</div>
+
+- Loudness % is derived from RMS ratios (linear scale).
+
+- Clarity improvement is based on sustained RMS energy reduction. SNR was not suitable in this case, reasoning explained below.
+
+- Pitch wobble uses IQR(F₀) (robust, voiced-only).
+
+## Key Findings : Explaining Benchmark Values
+
+- Both denoising approaches improved perceptual clarity relative to the raw input.
+- The **manual DSP pipeline** preserved higher loudness and presence but introduced a clearly audible **pitch wobble artefact**.
+- The **standard denoising method** produced a quieter output with **greater pitch stability** and perceptual cleanliness.
+- Peak-to-peak and RMS analyses confirmed progressively stronger amplitude suppression from input → manual DSP → standard denoising.
+- SNR analysis showed that aggressive gain reduction can **lower numerical SNR** despite improving perceived audio quality, highlighting a limitation of SNR as a standalone metric.
+- Frame-to-frame pitch analysis (ΔF₀ statistics, IQR, octave flip rate) provided **quantitative evidence** that the manual DSP method introduced pitch instability, validating subjective listening impressions.
+
+**Overall:** custom DSP offers flexibility and loudness retention but is more prone to unintended artefacts, while standard pipelines prioritise stability and clarity at the cost of reduced signal level.
 
 ## Project Inspiration (A Short story)
 
