@@ -1,5 +1,9 @@
 # Video Audio Denoising (Digital Signal Processing Project)
 
+<p align="center">
+  <img src="IMAGES/0_SNR_FACE.png" alt="Waveform overlay (Input vs Manual DSP vs Standard)" width="800">
+</p>
+
 This repository documents a learning-focused digital signal processing (DSP) project centred on background noise suppression in the audio track of video recordings.
 
 The project implements and analyses two parallel denoising approaches:
