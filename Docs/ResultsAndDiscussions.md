@@ -7,14 +7,11 @@
 A special thanks to my friend Abby, 3rd year undergrad math student at UCL, who is quoted verbatim below.
 
 ```quote
-When I first listened to the outputs, I wasn’t trying to analyse anything formally — I was just listening like a normal person would.
+When I first listened to the outputs, I wasn’t trying to analyse anything — I was just listento it.
 
-Two things immediately stood out:
+Inoticed how both denoising approaches compared to the original input and also how they compared to each other.
 
-First, how both denoising approaches compared to the original input.
-Second, how they compared to each other.
-
-While listening back, I found myself paying attention to something specifc which kinda bothered me, A weird voice modulation — especially an unnatural normal-and-down pitch movement.
+However, I found myself paying attention to something that kinda bothered me, some weird voice modulation stuff. An unnatural eerie deepening movement / fluctuation on the manual sample I think.
 ```
 
 With those impressions in mind — and knowing what to listen for — the next step was to stop relying purely on perception and actually look at the signal.
@@ -143,7 +140,7 @@ This plot (further complemented with the plot 5A) therefore captures the trade-o
 
 ![as](../Images/distribution_of_pitch_step_sizes.png)
 
-What Abby was talking about when she said (in verbatim), "A weird voice modulation — especially an unnatural normal-and-down pitch movement", she was reffering to "The Pitch Wobble" atefact.
+What Abby was talking about when she said (in verbatim), "weird voice modulation stuff. An unnatural eerie deepening movement / fluctuation on the manual sample I think.", she was reffering to "The Pitch Wobble" atefact.
 
 This analysis evaluates **pitch stability** across the input signal, the manual DSP denoising pipeline, and the standard denoising method by examining **frame-to-frame fundamental frequency (F₀) behaviour** in voiced regions only.
 
