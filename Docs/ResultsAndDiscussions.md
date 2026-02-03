@@ -202,4 +202,4 @@ see [conclusion.md](Conclusion.md)
 
 ## Note to reader who got this far,
 
-Further Analysis not covered in this document that can be found in the comparative signal analysis notebook linked [HERE](../notebooks/statistical_comparison_and_signal_analysis.ipynb).
+Further Analysis not covered in this document that can be found in the comparative signal analysis notebook linked [HERE](../notebooks/statistical_comparison_and_signal_analysis.ipynb)..
