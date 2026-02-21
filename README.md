@@ -145,4 +145,4 @@ It didn’t.
 
 What started as “let me remove some background noise” quickly turned into a much deeper problem involving time–frequency representations, stability issues, artefacts, and lots of trial, error, and reading. The project ended up stretching over nearly a month, growing far beyond the original idea.
 
-But i stayed resilient and by the end of it, the real win wasn’t just cleaner audio — it was how much more clearly I understood the full DSP pipeline, its limitations, and why seemingly simple problems are rarely simple once you try to solve them properly.
+But i stayed resilient and by the end of it, the real win wasn’t just cleaner audio — it was how much more clearly I understood the full DSP pipeline, its limitations, and why seemingly simple problems are rarely simple once you try to solve them properly..
